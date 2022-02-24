@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApplication.MainPage">
+
+    <StackLayout Background="#F6F6F6">
+ 
+
+        <Label x:Name="MyLabel" 
+               BackgroundColor="#581845" 
+               TextColor="#C70039" 
+               Padding="30"
+               Margin="20"
+               FontAttributes="Italic"/>
+
+        <ImageButton Source="https://zajel.najah.edu/resources/img/sm_logo.png"
+                     Clicked="ImageButton_Clicked"
+                     Margin="20"
+                     BackgroundColor="Snow"
+                     WidthRequest="100"
+                     HeightRequest="50"/>
+        
+        <ImageButton Source="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" 
+                     Clicked="ImageButton_Clicked_1"  
+                     Margin="20"
+                     BackgroundColor="White"  
+                     WidthRequest="100" 
+                     HeightRequest="50"/>
+
+        <WebView x:Name="WebPage"
+                 HeightRequest="500"
+                 WidthRequest="200"/>
+    </StackLayout>
+
+</ContentPage>
